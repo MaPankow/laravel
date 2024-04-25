@@ -1,0 +1,42 @@
+
+1. **`unique`**: Stellt sicher, dass das Eingabefeld in einer bestimmten Datenbanktabelle einzigartig ist. Du hast diese Regel bereits verwendet.
+
+2. **`confirmed`**: Prüft, ob das Eingabefeld eine zugehörige Bestätigung hat, z. B. bei Passwörtern, wo `password` und `password_confirmation` übereinstimmen müssen.
+
+3. **`email`**: Stellt sicher, dass das Feld eine gültige E-Mail-Adresse enthält.
+
+4. **`exists`**: Überprüft, ob der angegebene Wert in einer angegebenen Datenbanktabelle existiert. Das ist nützlich für Überprüfungen von Fremdschlüsseln.
+
+5. **`date`**: Prüft, ob das Feld ein gültiges Datum ist.
+
+6. **`date_format`**: Überprüft, ob das Feld einem bestimmten Datums- oder Zeitformat entspricht, z. B. `date_format:Y-m-d`.
+
+7. **`different`**: Das Feld muss einen anderen Wert haben als ein anderes angegebenes Feld.
+
+8. **`digits`**: Das Feld muss numerisch sein und eine bestimmte Länge haben.
+
+9. **`digits_between`**: Das Feld muss eine Zahl mit einer Länge zwischen den angegebenen Mindest- und Höchstgrenzen sein.
+
+10. **`boolean`**: Das Feld muss entweder `true` oder `false` sein.
+
+11. **`array`**: Das Feld muss ein Array sein.
+
+12. **`accepted`**: Das Feld muss `yes`, `on`, `1`, oder `true` sein. Dies wird oft für Überprüfungsfelder verwendet.
+
+13. **`regex`**: Das Feld muss einem bestimmten regulären Ausdruck entsprechen.
+
+14. **`nullable`**: Das Feld kann `null` sein. Das ist nützlich, wenn das Feld nicht zwingend ausgefüllt werden muss.
+
+15. **`alpha`**: Das Feld darf nur alphabetische Zeichen enthalten.
+
+16. **`alpha_dash`**: Das Feld darf alphabetische Zeichen, Zahlen, Unterstriche (_) und Bindestriche (-) enthalten.
+
+17. **`alpha_num`**: Das Feld darf nur alphabetische Zeichen und Zahlen enthalten.
+
+18. **`between`**: Das Feld muss einen Wert zwischen den angegebenen Mindest- und Höchstwerten haben, z. B. `between:1,10`.
+
+19. **`ip`**: Das Feld muss eine gültige IP-Adresse sein.
+
+20. **`json`**: Das Feld muss eine gültige JSON-Zeichenkette sein.
+
+Diese Regeln können einzeln oder in Kombination verwendet werden, um eine robuste Validierung basierend auf deinen spezifischen Anwendungsanforderungen zu implementieren. Laravel ermöglicht es auch, eigene benutzerdefinierte Validierungsregeln zu erstellen, falls die Standardregeln nicht ausreichen.

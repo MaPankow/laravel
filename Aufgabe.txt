@@ -1,0 +1,15 @@
+1- Ein neues Projekt erstellen
+mit dem Terminal im Projekt ordner "code ." dann startet VSC und drin mit dem Terminal "composer create-project laravel/laravel ."
+php artisan serve
+2- routes ->Web.php-> view() anpassen
+3- php Artisan für den Controller
+4- in resources->Views eine blade Datei erstellen (Username, Vorname und Nachname, Password)
+
+--Aufgabe 2--
+Das Ziel: Lesen und speicher der Daten von dem Nutzer:
+
+1- Die DB connecten: .env ->php myadmin-> "new" und hier einen Namen für unser projekt festlegen.(Datenbank)
+2- wir erstellen Tabellen für die Datenbank mit diesem Befehl ""php artisan migrate"""
+Optional: php artisan make:migration create_animals_table
+
+User::create($incomingFields);

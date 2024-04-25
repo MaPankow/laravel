@@ -1,0 +1,4 @@
+-- Wochenprojekt: Konstruktion eines Anmeldemaske mit Laravel incl. Registrierung.
+--- Es soll aus der zweiten php Woche, das Wochenprojekt überführt werden.
+--- Hierfür müssen die Teilnehmer wissen, wo die Views abgelegt sind und wie sie die Routen
+konstruieren. Es soll möglich sein sich als Benutzer zu Registrieren und anschließend sich einzuloggen
