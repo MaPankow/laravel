@@ -13,3 +13,31 @@ Das Ziel: Lesen und speicher der Daten von dem Nutzer:
 Optional: php artisan make:migration create_animals_table
 
 User::create($incomingFields);
+
+
+
+
+
+
+
+
+
+
+
+
+Blad - web.php - 
+
+Funktion. und brauchen Request
+Validate()
+
+if auth()->attempt
+
+return redirect("/");
+
+
+
+
+
+
+
+

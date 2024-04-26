@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-   $daten = ['Titel' => 'Willkommen bei Laravel'];
-    return view('home', $daten);
+//    $daten = ['Titel' => 'Willkommen bei Laravel'];
+    return view('home');
 });
 
 
@@ -61,7 +61,8 @@ Route::get('/', function () {
 //  Das Verwenden von Routennamen macht Ihren Code klarer und weniger fehleranfällig, wenn URLs sich ändern
 
 Route::post("/register", [UserController::class, 'register']);
-
+Route::post("/logout", [UserController::class, 'logout']);
+Route::post("/login", [UserController::class, 'login']);
 
 
 
