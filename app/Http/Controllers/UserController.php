@@ -8,6 +8,15 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
+    public function adminpage()
+    {
+        return view("adminpage");
+    }
+
+
+
+
+
     public function login(Request $request){
         $incomingFields = $request->validate([
             "loginusername" => "required",
