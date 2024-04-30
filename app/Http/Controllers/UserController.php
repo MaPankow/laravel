@@ -36,7 +36,7 @@ class UserController extends Controller
     }
 
    public function register(Request $request)   //Request ist ein Assistent, der uns hilft, die Wünsche unserer Besucher zu verstehen,
-                                                //Hier sind einige Funktionen: Input-Daten abrufen, Datei-Uploads verabreiten, Session-Daten verwalten                                      //und Cookies lesen
+                                                //Hier sind einige Funktionen: Input-Daten abrufen, Datei-Uploads verabreiten, Session-Daten verwalten          //und Cookies lesen
     {
     $incomingFields = $request->validate([
         // 'name' => 'required',
