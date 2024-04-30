@@ -7,5 +7,9 @@
 </head>
 <body>
         <h1> only admin <h1>
+            
+        <form action="/logout" method="POST"> 
+        @csrf
+        <button>Log out</button>
 </body>
 </html>

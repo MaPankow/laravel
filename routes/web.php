@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get("/adminpage", [UserController::class, 'adminpage']);
+Route::get("/adminpage", [UserController::class, 'adminpage'])->middleware("admin");
 
 // Route::get('/user/{id}', function ($id) {
 //     return 'Benutzer ID: ' . $id;    //http://127.0.0.1:8000/user/123
