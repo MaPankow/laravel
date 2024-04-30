@@ -14,9 +14,6 @@ class UserController extends Controller
     }
 
 
-
-
-
     public function login(Request $request){
         $incomingFields = $request->validate([
             "loginusername" => "required",
