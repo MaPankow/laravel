@@ -1,12 +1,17 @@
 <?php
 
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-//    $daten = ['Titel' => 'Willkommen bei Laravel'];
-    return view('home');
+
+    $blogs = Blog::all();
+    return view('home', ["blogs" => $blogs]);
 });
+
+
 
 Route::get("/adminpage", [UserController::class, 'adminpage'])->middleware("admin");
 
@@ -64,6 +69,14 @@ Route::get("/adminpage", [UserController::class, 'adminpage'])->middleware("admi
 Route::post("/register", [UserController::class, 'register']);
 Route::post("/logout", [UserController::class, 'logout']);
 Route::post("/login", [UserController::class, 'login']);
+
+
+//Blog post related routes
+Route::post("/create-post", [PostController::class, 'create_post']);
+
+
+
+
 
 
 

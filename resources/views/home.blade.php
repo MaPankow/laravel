@@ -9,10 +9,31 @@
 
     @auth
     <p>Congrats you are logged in</p>
-
     <form action="/logout" method="POST"> 
         @csrf
         <button>Log out</button>
+    </form>
+
+    <div style="border: 3px solid black;">
+        <h2>Create a New Post</h2>
+        <form action="/create-post" method="POST"> 
+            @csrf
+            <input name="title" type="text" placeholder="post title">
+            <textarea name="body" placeholder="body content...."></textarea>
+            <button>Save Post</button>
+        </form>
+    </div>
+  
+    <div style="border: 3px solid black;">
+        <h2>All Posts</h2>
+        @foreach($blogs as $blog)
+        <div style="background-color: gray; padding: 10px; margin: 10px;">
+            <h3>{{$blog["title"]}}</h3>
+            {{$blog["body"]}}
+        </div>
+        @endforeach
+    </div>   
+
     @else
     <div style="border: 3px solid black;">
         <h2>Register</h2>
